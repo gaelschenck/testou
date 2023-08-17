@@ -1,0 +1,359 @@
+/* les images, type logo*/
+#logo {
+    height: 30px;    
+}
+#logo2{
+    height:30px
+}
+
+#logo:hover{
+    animation-name: giggle;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes giggle{
+    20% {transform: rotate(20deg);}
+    40% {transform: rotate(-10deg);}
+    60% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    to {transform: rotate(0deg);}
+}
+
+button{
+    background-color:gold;
+    border-color:transparent;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+    font-display: center;
+    margin-top: 30px;
+    transition: transform .2s;
+}
+
+button:hover{
+    opacity: 0.9;  
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+
+.photo-section-1{
+    background-image: url("../img/illustration_principale.jpg");
+    background-size: cover;
+    max-height: 1200px;
+    padding:10%;
+}
+
+.souligne{
+    font-family: volkhov-regular;
+    font-weight: bold;
+    font-size: 75px;
+    color: white;
+    background-image: url("../img/souligne_rose.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    
+}
+
+#décor-croix{
+    float: right;
+    width:130px;
+}
+
+body{
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+/*menu header*/
+.logo-entete{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+li:hover{
+    text-decoration: underline;
+}
+
+/*typos*/
+*{
+    font-family: poppins-regular;
+    
+}
+
+a{
+    color: darkslategray;
+    text-decoration:none;
+}
+
+h2{
+    font-family: poppins-bold, verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+h1{
+    font-family: volkhov-regular;
+    font-weight: bold;
+    font-size: 75px;
+    color: white;
+}
+
+h3{
+    font-family: volkhov-bold;
+    font-size: 50px;
+    color:rgb(33, 52, 52)
+}
+
+h4{
+    color:lightgray;
+    margin-bottom: -20px;
+}
+
+
+.couleur-saumon{
+    color: salmon;
+}
+
+p{
+    color:lightgray;
+    max-width: 470px;
+    line-height: 25px;
+}
+
+figcaption{
+    text-align: center;
+    line-height: 30px;
+}
+
+.titre-figcaption{
+    font-family: OpenSans-Regular;
+    color: rgb(37, 33, 62);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 70px;
+}
+
+/* section2*/
+
+.centre{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-plat{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.bord-arrondi{
+    width:260px;
+    padding: 30px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: white;
+    box-shadow: inset 0 0 0, 0 0 2em lightgray;
+}
+
+.rognage{
+    border-radius: 30px 30px 0px 0px;
+    transform: translate(-30px, -30px);
+}
+
+.menu-sushi{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: center;
+    justify-content : center;
+    margin-top: 10%;
+}
+
+.bord-arrondi2{
+    background-color: transparent;
+    padding: 0 20px 0 20px;
+    width: 250px;
+    height:310px;
+    justify-content: center;
+    box-sizing:border-box;
+    padding-bottom: 30px;
+    margin:0;
+    
+}
+.fond-blanc:hover{
+    border-radius: 30px 30px 30px 30px;
+    background-color: white;
+    box-shadow: inset 0 0 0, 0 0 2em lightgray;
+}
+
+.image-centre{
+    padding-left: 15%;
+}
+
+.espace-milieu{
+    display:flex;
+    text-align: center;
+    margin: 100px 0 170px 0;
+}
+
+/*section3*/
+
+.photo-chef{
+    
+    background-image: url("../img/illustration_chef.jpg");
+    max-width : 100%;
+}
+
+.boite-texte1{
+    width:500px;
+    padding-left: 7%;
+    padding-top: 250px;
+}
+
+.boite-texte2{
+    width: 400px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 6%;
+    padding-bottom: 200px;
+}
+
+.conteneur-video{
+    position:relative;
+    width:400px;
+    height:200px;
+}
+
+#fondvideo{    
+    border-radius: 15px;   
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+#boutonvideo{
+    position:  absolute;
+    width:69px;
+    height:70px;
+    top:200px;
+    left:300px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.3%;
+    cursor: pointer;
+    right: 100px;
+}
+.flex-insert{
+    float:left;
+    margin-bottom:20%;
+}
+.insert{
+    width:auto;
+    height:600px;
+}
+
+
+/*section4*/
+
+.section4{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+
+#testbg::before{
+   /* content: url("../img/illustration_commander.jpg");
+    background-image: url("../img/illustration_commander.jpg");*/
+    content: "";
+    background-image: url("../img/illustration_commander.jpg");
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.commander{
+    display:flex;
+    justify-items: center;
+    width:500px;
+}
+
+.image{
+    height:50px;
+}
+
+.legende{
+    text-align: left;
+    padding-left:15px;
+    padding-right:40px
+}
+
+.couleur-saumon2{
+    color: salmon;
+}
+
+.titre-figcaption2{
+    font-family: poppins-bold;
+}
+
+.texte-gris-fonce{
+    font-size: 18px;
+    font-family: poppins-regular;
+    color: #5E6282;
+}
+
+/*section5*/
+
+.formulaire-gauche{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.formulaire-droite{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: url("../img/illustration_formulaire.jpg");
+    background-size: cover;
+}
+
+.formulaire-droite, .formulaire-gauche{
+    display: table-cell;
+    width: 50%;
+    height:100%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.conteneur-formulaire{
+    max-width:1020px;
+    box-shadow: 0px 4px 61px 0px rgb(0 0 0 / 10%);
+    margin: auto;
+    display: table;
+    width:100%;
+}
