@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FDP Pathfinder v3</title>
+    <link rel="stylesheet" href="feuille_1.css">
+  </head>
+  <body>
+    <div id="info_1">
+        <label for="pseudo">Nom du personnage</label>
+        <input type="text" id="pseudo" name="pseudo">
+        <label for="player_name">Nom du joueur</label>
+        <input type="text" id="player_name" name="player_name">
+        <label for="ascendance_p">Ascendance</label>
+        <input type="text" id="ascendance_p" name="ascendance_p">
+        <label for="class_p">Classe</label>
+        <input type="text" id="classe_p" name="classe_p">
+        <label for="historique_p">Historique</label>
+        <input type="text" id="historique_p" name="historique_p">
+    </div>
+    <div id="info_2">
+        <label for="level">Niveau</label>
+        <input type="number" id="level" name="level">
+        <label for="experience_point">Expérience</label>
+        <input type="text" id="experience_point" name="experience_point">
+        <label for="hero_point">Points d'Héroïsme</label>
+        <input type="checkbox" id="hero1" name="hero_point">
+        <input type="checkbox" id="hero2" name="hero_point">
+        <input type="checkbox" id="hero3" name="hero_point">
+        <label for="class_p">Traits</label>
+        <input type="text" id="trait_p" name="trait_p">
+    </div>
+    <div id="info_3">
+        <label for="taille">Taille</label>
+        <input type="number" id="taille" name="taille">
+        <label for="poids">Poids</label>
+        <input type="text" id="poids" name="poids">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+        <label for="sexe">Sexe</label>
+        <input type="text" id="sexe" name="sexe">
+        <label for="alignement">Alignement</label>
+        <input type="text" id="alignement" name="alignement">
+    </div>
+    <div id="caractéristique">
+        <fieldset class="carac">
+            <legend>CARACTERISTIQUES</legend>
+            <div>
+                <label for="for_val">FORCE</label>
+                <input type="number" id="for_val" name="for_val">
+                <input type="number" id="for_bonus" name="for_bonus">
+            </div>
+            <div>
+                <label for="dex_val">DEXTERITE</label>
+                <input type="number" id="dex_val" name="dex_val">
+                <input type="number" id="dex_bonus" name="dex_bonus">
+            </div>
+            <div>
+                <label for="con_val">CONSTITUTION</label>
+                <input type="number" id="con_val" name="con_val">
+                <input type="number" id="con_bonus" name="con_bonus">
+            </div>
+            <div>
+                <label for="int_val">INTELLIGENCE</label>
+                <input type="number" id="int_val" name="int_val">
+                <input type="number" id="int_bonus" name="int_bonus">
+            </div>
+            <div>
+                <label for="sag_val">SAGESSE</label>
+                <input type="number" id="sag_val" name="sag_val">
+                <input type="number" id="sag_bonus" name="sag_bonus">
+            </div>
+            <div>
+                <label for="cha_val">CHARISME</label>
+                <input type="number" id="cha_val" name="cha_val">
+                <input type="number" id="cha_bonus" name="cha_bonus">
+            </div>
+        </fieldset>
+        <fieldset class="carac">
+            <legend>DD DE CLASSE</legend>
+            <div>
+                <label for="ess_bonus">ESS</label>
+                <input type="number" id="ess_bonus" name="ess_bonus">
+                <label for="dd_mait">MAITRISE</label>
+                <input type="number" id="dd_mait" name="dd_mait">
+                <label for="dd_objet">OBJET</label>
+                <input type="number" id="dd_objet" name="dd_objet">
+            </div>
+        </fieldset>
+    </div>
+    <div id="défense">
+        <fieldset class="CA">
+            <legend>CLASSE D'ARMURE</legend>
+            <div>
+                <label for="dex_bonus_ca">DEX</label>
+                <input type="number" id="dex_bonus_ca" name="dex_bonus_ca">
+                <label for="dex_max_ca">DEX MAX</label>
+                <input type="number" id="dex_max_ca" name="dex_max_ca">
+                <label for="mait_ca">MAITRISE</label>
+                <input type="number" id="mait_ca" name="mait_ca">
+                <label for="objet_ca">OBJET</label>
+                <input type="number" id="objet_ca" name="objet_ca">
+            </div>
+        </fieldset>
+        <fieldset class="bouclier">
+            <legend>BOUCLIER</legend>
+            <div>
+                <label for="solidité_bouclier">SOLIDITE</label>
+                <input type="number" id="solidité_bouclier" name="solidité_bouclier">
+                <label for="PV_max_bouclier">PV MAX</label>
+                <input type="number" id="PV_max_bouclier" name="PV_max_bouclier">
+                <label for="sr_bouclier">SR</label>
+                <input type="number" id="sr_bouclier" name="sr_bouclier">
+                <label for="pv_bouclier">PV ACTUELS</label>
+                <input type="number" id="pv_bouclier" name="pv_bouclier">
+            </div>
+        </fieldset>
+        <fieldset class="jds">
+            <legend>JETS DE SAUVEGARDE</legend>
+            <div>
+                <legend>VIGUEUR</legend>
+                    <label for="con_bonus_vig">CON</label>
+                    <input type="number" id="con_bonus_vig" name="con_bonus_vig">
+                    <label for="mait_jds_vig">MAITRISE</label>
+                    <input type="number" id="mait_jds_vig" name="mait_jds_vig">
+                    <label for="objet_jds_vig">OBJET</label>
+                    <input type="number" id="objet_jds_vig" name="objet_jds_vig">
+                <legend>REFLEXES</legend>
+                    <label for="con_bonus_ref">DEX</label>
+                    <input type="number" id="con_bonus_ref" name="con_bonus_ref">
+                    <label for="mait_jds_ref">MAITRISE</label>
+                    <input type="number" id="mait_jds_ref" name="mait_jds_ref">
+                    <label for="objet_jds_ref">OBJET</label>
+                    <input type="number" id="objet_jds_ref" name="objet_jds_ref">
+                <legend>VOLONTE</legend>
+                    <label for="con_bonus_vol">SAG</label>
+                    <input type="number" id="con_bonus_vol" name="con_bonus_vol">
+                    <label for="mait_jds_vol">MAITRISE</label>
+                    <input type="number" id="mait_jds_vol" name="mait_jds_vol">
+                    <label for="objet_jds_vol">OBJET</label>
+                    <input type="number" id="objet_jds_vol" name="objet_jds_vol">
+            </div>
+        </fieldset>
+    </div>
+    <div id="perception">
+        <fieldset class="perception">
+            <legend>PERCEPTION</legend>
+            <div>
+                <label for="sag_bonus_perc">SAG</label>
+                <input type="number" id="sag_bonus_perc" name="sag_bonus_perc">
+                <label for="mait_perc">MAITRISE</label>
+                <input type="number" id="mait_perc" name="mait_perc">
+                <label for="objet_perc">OBJET</label>
+                <input type="number" id="objet_perc" name="objet_perc">
+                <label for="sens_perc">SENS</label>
+                <input type="textarea" id="sens_perc" name="sens_perc">
+            </div>
+        </fieldset>
+        <fieldset class="vitesse">
+            <legend>VITESSE</legend>
+            <div>
+                <label for="solidité_bouclier">SOLIDITE</label>
+                <input type="number" id="solidité_bouclier" name="solidité_bouclier">
+                <label for="PV_max_bouclier">PV MAX</label>
+                <input type="number" id="PV_max_bouclier" name="PV_max_bouclier">
+                <label for="sr_bouclier">SR</label>
+                <input type="number" id="sr_bouclier" name="sr_bouclier">
+                <label for="pv_bouclier">PV ACTUELS</label>
+                <input type="number" id="pv_bouclier" name="pv_bouclier">
+            </div>
+        </fieldset>
+    </div>
+
+  </body>
+</html>

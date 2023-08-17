@@ -1,0 +1,19 @@
+#caractéristique{
+    background:green;
+}
+#caractéristique label{
+    width:200px;
+}
+#caractéristique input{
+    width:40px;
+}
+.carac{
+    width:25%;
+    display:inline-block;
+}
+#défense{
+    background:red;
+}
+#perception{
+    background:purple;
+}
